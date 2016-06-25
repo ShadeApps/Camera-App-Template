@@ -1,0 +1,29 @@
+//
+//  CameraAppTemplate.pch
+//  CameraAppTemplate
+//
+//  Created by Sergey Grischyov on 17.02.16.
+//  Copyright © 2016 ShadeApps. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "CBTFunctions.h"
+
+#import "AppDelegate.h"
+#import "Constants.h"
+
+#import "SHDDefaultsUtility.h"
+#import "UIView+roundLayer.h"
+#import "UILabel+Boldify.h"
+
+#endif

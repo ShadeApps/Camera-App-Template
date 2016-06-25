@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHDIntroFirstPageView">
+            <connections>
+                <outlet property="container" destination="iN0-l3-epB" id="VQo-xY-E46"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKh-Al-use">
+                    <rect key="frame" x="0.0" y="346" width="600" height="254"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Camera!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-qz-hSv">
+                            <rect key="frame" x="198" y="0.0" width="205" height="27"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPn-tU-Nx3">
+                            <rect key="frame" x="201" y="37" width="198" height="41"/>
+                            <string key="text">Now you can take a selfie
+in yet another useless app!</string>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7mU-qz-hSv" firstAttribute="centerX" secondItem="cKh-Al-use" secondAttribute="centerX" id="3z9-3N-LVE"/>
+                        <constraint firstItem="vPn-tU-Nx3" firstAttribute="centerX" secondItem="cKh-Al-use" secondAttribute="centerX" id="fWi-Qh-BbO"/>
+                        <constraint firstItem="7mU-qz-hSv" firstAttribute="top" secondItem="cKh-Al-use" secondAttribute="top" id="jfY-aa-97G"/>
+                        <constraint firstItem="vPn-tU-Nx3" firstAttribute="top" secondItem="7mU-qz-hSv" secondAttribute="bottom" constant="10" id="lHt-61-oLL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIh-pU-jlt">
+                    <rect key="frame" x="0.0" y="64" width="600" height="282"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNC-JN-Ccf">
+                            <rect key="frame" x="35" y="20" width="530" height="242"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgIntroCardFrame" translatesAutoresizingMaskIntoConstraints="NO" id="BbZ-WF-q7t">
+                                    <rect key="frame" x="0.0" y="0.0" width="530" height="242"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgFirstIntroCard" translatesAutoresizingMaskIntoConstraints="NO" id="xLG-rP-nMT">
+                                    <rect key="frame" x="11" y="10" width="508" height="202"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="BbZ-WF-q7t" secondAttribute="bottom" id="EyV-T5-PCX"/>
+                                <constraint firstAttribute="bottom" secondItem="xLG-rP-nMT" secondAttribute="bottom" constant="30" id="Khp-Ic-vup"/>
+                                <constraint firstItem="xLG-rP-nMT" firstAttribute="top" secondItem="uNC-JN-Ccf" secondAttribute="top" constant="10" id="TwP-4A-yMw"/>
+                                <constraint firstAttribute="trailing" secondItem="xLG-rP-nMT" secondAttribute="trailing" constant="11" id="ak4-MQ-ekD"/>
+                                <constraint firstItem="xLG-rP-nMT" firstAttribute="leading" secondItem="uNC-JN-Ccf" secondAttribute="leading" constant="11" id="dSW-RR-OEK"/>
+                                <constraint firstItem="BbZ-WF-q7t" firstAttribute="top" secondItem="uNC-JN-Ccf" secondAttribute="top" id="eF1-zp-jFI"/>
+                                <constraint firstItem="BbZ-WF-q7t" firstAttribute="leading" secondItem="uNC-JN-Ccf" secondAttribute="leading" id="g8Y-cO-neW"/>
+                                <constraint firstAttribute="trailing" secondItem="BbZ-WF-q7t" secondAttribute="trailing" id="sMT-P4-5UL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uNC-JN-Ccf" secondAttribute="bottom" constant="20" id="UCX-i3-LAa"/>
+                        <constraint firstItem="uNC-JN-Ccf" firstAttribute="top" secondItem="yIh-pU-jlt" secondAttribute="top" constant="20" id="kok-CJ-xjW"/>
+                        <constraint firstAttribute="trailing" secondItem="uNC-JN-Ccf" secondAttribute="trailing" constant="35" id="tyw-Fe-dqa"/>
+                        <constraint firstItem="uNC-JN-Ccf" firstAttribute="leading" secondItem="yIh-pU-jlt" secondAttribute="leading" constant="35" id="v2P-Zd-9wH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cKh-Al-use" firstAttribute="height" secondItem="yIh-pU-jlt" secondAttribute="height" multiplier="0.9" id="20D-JC-yWX"/>
+                <constraint firstItem="yIh-pU-jlt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2dR-69-fJ9"/>
+                <constraint firstAttribute="trailing" secondItem="cKh-Al-use" secondAttribute="trailing" id="5A6-p9-BTF"/>
+                <constraint firstItem="cKh-Al-use" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5GB-WF-EYK"/>
+                <constraint firstAttribute="bottom" secondItem="cKh-Al-use" secondAttribute="bottom" id="SVd-do-v3y"/>
+                <constraint firstAttribute="trailing" secondItem="yIh-pU-jlt" secondAttribute="trailing" id="W8p-Ce-pwC"/>
+                <constraint firstItem="yIh-pU-jlt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="ZQO-dy-Qy6"/>
+                <constraint firstItem="cKh-Al-use" firstAttribute="top" secondItem="yIh-pU-jlt" secondAttribute="bottom" id="tal-sv-1iD"/>
+            </constraints>
+            <point key="canvasLocation" x="573" y="478"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgFirstIntroCard" width="281" height="227"/>
+        <image name="imgIntroCardFrame" width="304" height="276"/>
+    </resources>
+</document>

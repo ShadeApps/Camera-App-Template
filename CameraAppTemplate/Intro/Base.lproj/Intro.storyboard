@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="edx-gW-IHz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="introVC" id="BYZ-38-t0r" customClass="SHDIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ija-lr-noX" userLabel="imgNavBarView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgNavBarBackground" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-14-Qj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-HZ-hgf">
+                                        <rect key="frame" x="238" y="17" width="124" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AF2-HZ-hgf" firstAttribute="centerX" secondItem="ija-lr-noX" secondAttribute="centerX" id="C8r-Vx-XdH"/>
+                                    <constraint firstAttribute="trailing" secondItem="W8l-14-Qj2" secondAttribute="trailing" id="GlB-fM-ZW8"/>
+                                    <constraint firstItem="AF2-HZ-hgf" firstAttribute="centerY" secondItem="ija-lr-noX" secondAttribute="centerY" id="Obd-RA-rIh"/>
+                                    <constraint firstAttribute="bottom" secondItem="W8l-14-Qj2" secondAttribute="bottom" id="QiV-QH-Utr"/>
+                                    <constraint firstItem="W8l-14-Qj2" firstAttribute="top" secondItem="ija-lr-noX" secondAttribute="top" id="RxK-ee-Rwf"/>
+                                    <constraint firstItem="W8l-14-Qj2" firstAttribute="leading" secondItem="ija-lr-noX" secondAttribute="leading" id="h8C-ca-pXb"/>
+                                    <constraint firstAttribute="height" constant="64" id="thR-IS-jTw"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgIntroBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="b7b-wp-upF">
+                                <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTn-Bz-F95">
+                                <rect key="frame" x="203" y="545" width="194" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VtR-dz-MDu"/>
+                                    <constraint firstAttribute="width" constant="194" id="hmv-Ea-M53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                <state key="normal" title="OK!" backgroundImage="imgGetStartedBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOKTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JcP-H6-p32"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.38431372549019605" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OTn-Bz-F95" secondAttribute="bottom" constant="10" id="Ozh-Kp-w3V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b7b-wp-upF" secondAttribute="bottom" id="YXl-ZS-wMP"/>
+                            <constraint firstAttribute="trailing" secondItem="b7b-wp-upF" secondAttribute="trailing" id="cWM-eo-hcV"/>
+                            <constraint firstAttribute="trailing" secondItem="ija-lr-noX" secondAttribute="trailing" id="gjC-AY-8Jg"/>
+                            <constraint firstItem="OTn-Bz-F95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBL-nG-dPt"/>
+                            <constraint firstItem="b7b-wp-upF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j3l-rg-c00"/>
+                            <constraint firstItem="ija-lr-noX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kFA-U2-09Z"/>
+                            <constraint firstItem="ija-lr-noX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rHD-wA-5jS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ofV-hq-7ba"/>
+                    <connections>
+                        <outlet property="btnOK" destination="OTn-Bz-F95" id="WTS-sb-tFG"/>
+                        <outlet property="imgBottomShadowView" destination="b7b-wp-upF" id="3BO-nt-aXw"/>
+                        <outlet property="navBarContainerView" destination="ija-lr-noX" id="lRG-3T-x3l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="136"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="Oms-Hm-ncr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="edx-gW-IHz" customClass="SHDNavigationViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rtZ-GX-2Qy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0PK-Tj-91X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ls-n2-wnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgGetStartedBackground" width="193" height="45"/>
+        <image name="imgIntroBottomBackground" width="375" height="70"/>
+        <image name="imgNavBarBackground" width="375" height="68"/>
+    </resources>
+</document>
