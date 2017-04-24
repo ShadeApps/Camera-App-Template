@@ -17,6 +17,19 @@ Written entirely on plain old Objective-C and extremely extensible.
 </a>
 </p>
 
+<p align="center">
+    <a href="https://github.com/ShadeApps/Camera-App-Template">
+        <img src="https://img.shields.io/cocoapods/l/SquishButton.svg" alt="License" />
+    </a>
+    <a href="https://github.com/ShadeApps/Camera-App-Template">
+        <img src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform" />
+    </a>
+    <a href="https://twitter.com/grischyov">
+        <img src="https://img.shields.io/badge/contact-@grischyov-blue.svg" alt="Twitter: @grischyov" />
+    </a>
+</p>
+
+
 ## Requirements
 
 **Xcode version 7.3.1 (7D1014)** with **iOS 9.2 SDK** required.
